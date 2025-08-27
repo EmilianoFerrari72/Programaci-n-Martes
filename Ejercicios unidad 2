@@ -1,0 +1,68 @@
+   
+# 1. Calcula el área de un rectángulo con base 5 y altura 3. Imprime el resultado.
+
+base=5
+altura=3
+area= base * altura
+
+print("El area del rectangulo es: ", area)
+
+# 2. Convierte la temperatura de Celsius a Fahrenheit. Pide al usuario ingresar la temperatura en Celsius y luego imprime la temperatura equivalente en Fahrenheit.
+
+celsius =float(input("Ingresa la termperatura en celcius"))
+Fahrenheit = (celsius * 9/5) + 32
+print("La temperatura en Fahrenheit es: ",Fahrenheit )
+
+# 3. Concatena tu nombre y tu edad como strings y guárdalos en una variable. Luego imprime el tipo de dato de esa variable.
+nombre = input("ingresa el nombre: ")
+edad = input("ingresa la edad: ")
+nombre_edad= nombre + edad
+print (type(nombre_edad))
+
+# 4. Calcula el área de un círculo con radio 4. Imprime el resultado.
+
+pi=3.1416
+radio=4
+area= pi * radio **2
+print ("El area del cuadrado es de: ",area)
+
+# 5. Pide al usuario que ingrese dos números y muestra la suma, resta, multiplicación y división de esos números.
+numero_uno = float(input("ingresa el primer numero: "))
+numero_dos = float(input("ingresa el segundo numero: "))
+resultado_suma= numero_uno + numero_dos
+resultado_resta= numero_uno - numero_dos
+resultado_multiplicacion= numero_uno * numero_dos
+resultado_division= numero_uno / numero_dos
+print("Resultado Suma: ",resultado_suma)
+print("Resultado Resta: ",resultado_resta)
+print("Resultado Multiplicacion: ",resultado_multiplicacion)
+print("Resultado Division: ",resultado_division)
+
+# 6. Almacena el resultado de una operación aritmética compleja en una variable y luego imprime tanto el resultado como el tipo de dato de esa variable.
+
+resultado= (3 * 5) + 5 * (8/9)
+print ("Resultado: ", resultado)
+print (type(resultado))
+
+# 7. Crea una variable booleana que represente si un alumno ha aprobado o no un examen y luego imprime su estado.
+
+resultado= True
+print("¿El alumno aprobo? ",resultado)
+
+# 8. Calcula el perímetro de un triángulo equilátero con lados de longitud 6. Imprime el resultado.
+longitud=6
+perimetro = longitud + longitud +longitud
+print("El perimetro del triangulo es de: ",perimetro)
+
+# 9. Pide al usuario que ingrese su nombre, edad y ciudad de residencia y luego imprime cada uno de esos datos con su respectivo tipo de dato.
+nombre= input("Ingrese Nombre: ")
+edad= int(input("Ingrese Edad: "))
+ciudad_residencia= input("Ingrese Ciudad de residencia: ")
+print("\tNombre: ",nombre,type(nombre))
+print("\tEdad: ",edad,type(edad))
+print("\tciudad_residencia: ",ciudad_residencia, type(ciudad_residencia))
+# 10. Realiza una operación matemática que involucre paréntesis, multiplicación, suma y resta. Guarda el resultado en una variable y luego imprímela junto con su tipo de dato.
+
+resultado= 8 + 5 * 10 + (108/3) - 8
+print("resultado: ", resultado)
+print("tipo de dato: ", type(resultado) )
