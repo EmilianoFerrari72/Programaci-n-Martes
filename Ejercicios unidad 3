@@ -1,0 +1,288 @@
+# 1. Solicita al usuario que ingrese su nombre y su edad. Luego, imprime un mensaje que diga "¡Hola, [nombre]! Tienes [edad] años".
+
+nombre=input("\tIngrese su Nombre: ")
+edad=input("\tIngrese su Edad: ")
+print("\tHola,", nombre,"Tienes",edad, "años")
+
+# 2. Imprima en pantalla las siguientes figuras geometricas (utilizar concatenación y replicación de strings)
+
+# +***************+
+# *               *
+# *               *
+# *               *
+# +***************+
+print("\t+***************+")
+print("\t*               *")
+print("\t*               *")
+print("\t*               *")
+print("\t+***************+")
+
+# +---+
+# |   |
+# |   |
+# |   |
+# +---+
+
+print("\t+---+")
+print("\t|   |")
+print("\t|   |")
+print("\t|   |")
+print("\t+---+")
+
+# ###################################
+# ###################################
+# ##                               ##
+# ##                               ##
+# ##                               ##
+# ###################################
+# ###################################
+
+print("\t###################################")
+print("\t###################################")
+print("\t##                               ##")
+print("\t##                               ##")
+print("\t##                               ##")
+print("\t###################################")
+print("\t###################################")
+
+# 3. Solicita al usuario que ingrese dos números enteros. Luego, convierte estos números a float, realiza la división de ambos y muestra el resultado.
+
+numero_uno=int(input("\tIngrese el primer numero: "))
+numero_dos=int(input("\tIngrese el segundo numero: "))
+numero_uno =float(numero_uno)
+numero_dos =float(numero_dos)
+resultado = numero_uno / numero_dos
+print("\tEl resultado de la division es de: ",resultado)
+
+# 4. Pide al usuario que ingrese una cadena que represente un número entero. Convierte esta cadena a un entero usando la función int() y luego suma 10. Imprime el resultado.
+numero_uno=int(input("\tIngrese un numero entero: "))
+resultado= numero_uno + 10
+print("\tEl resultado de la suma es de: ",resultado)
+# 5. Pregunta al usuario que ingrese un número. Si el número es mayor que 10, imprime "El número es mayor que 10". Si es igual a 10, imprime "El número es igual a 10". De lo contrario, imprime "El número es menor que 10".
+
+numero=int(input("\tIngrese un numero entero: "))
+
+if numero >10:
+    # aca empiza
+    print("\tEl número es mayor a 10")
+elif numero ==10:
+    print("\tEl número es igual a 10")
+elif numero <10:
+    print("\tEl número es menor a 10")
+
+# 6. Solicita al usuario que ingrese dos números y compara si son iguales. Si lo son, imprime "Los números son iguales". De lo contrario, imprime "Los números son diferentes".
+numero_uno=int(input("\tIngrese un numero entero: "))
+numero_dos=int(input("\tIngrese un numero entero: "))
+if numero_uno == numero_dos:
+    # aca empiza
+    print("\tLos números son iguales")
+else:
+    print("\tLos números son diferentes")
+
+# 7. Pregunta al usuario que ingrese su edad. Si la edad es mayor o igual a 18, imprime "Eres mayor de edad". De lo contrario, imprime "Eres menor de edad".
+edad=int(input("\tIngresa tu edad: "))
+
+if edad >= 18:
+    # aca empiza
+    print("\tEres mayor de edad")
+else:
+    print("\tEres menor de edad")
+
+# 8. Pide al usuario que ingrese una temperatura en Celsius. Si la temperatura es mayor o igual a 100, imprime "El agua está hirviendo". Si es menor o igual a 0, imprime "El agua está congelada". De lo contrario, imprime "El agua está en estado líquido".
+Temperatura=float(input("\tIngresa la temperatura en Celsius: "))
+
+if Temperatura >= 100:
+    # aca empiza
+    print("\tEl agua esta hirviendo")
+elif Temperatura <=0:
+    print("\tEl agua esta congelada")
+elif Temperatura >0 <100:
+    print("\tEl agua está en estado líquido")
+
+
+# 9. Pregunta al usuario que ingrese un número. Si es positivo, imprime "El número es positivo". Si es negativo, imprime "El número es negativo". Si es cero, imprime "El número es cero".
+
+numero=float(input("\tIngresa un numero: "))
+
+if numero > 0:
+    # aca empiza
+    print("\tEl número es positivo")
+elif numero <0:
+    print("\tEl número es negativo")
+elif numero ==0:
+    print("\tEl número es cero")
+
+# 10. Solicita al usuario que ingrese un número del 1 al 7. Luego, imprime el día de la semana correspondiente (1 para Lunes, 2 para Martes, etc.). Si ingresa un número fuera de ese rango, imprime "Número de día no válido".
+
+
+numero=int(input("\tIngresa un numero del 1 al 7: "))
+
+if numero == 1:
+    print("\tLunes")
+elif numero == 2:
+    print("\tMartes")
+elif numero == 3:
+    print("\tMiércoles")
+elif numero == 4:
+    print("\tJueves")
+elif numero == 5:
+    print("\tViernes")
+elif numero == 6:
+    print("\tSábado")
+elif numero == 7:
+    print("\tDomingo")
+else:
+    print("\tNúmero de día no válido")
+
+
+# 11.Calculadora básica
+# Crea un programa que tome dos números como entrada y luego imprima la suma, resta, multiplicación y división de esos dos números. Usa operadores aritméticos y asegúrate de manejar casos donde el divisor sea cero.
+
+numero_uno=float(input("\tIngrese un numero : "))
+numero_dos=float(input("\tIngrese un numero : "))
+suma = numero_uno + numero_dos
+resta = numero_uno - numero_dos
+multiplicacion = numero_uno * numero_dos
+
+if numero_dos == 0:
+    print("\tDivision: No se puede dividir por cero")    
+else:
+    division = float(numero_uno) / float(numero_dos)
+    print("\tdivision: ", division)
+
+print("\tsuma: ", suma)
+print("\tresta: ", resta)
+print("\tmultiplicación: ", multiplicacion)
+
+
+# 12.Calculador de IMC
+# Crea un programa que calcule el Índice de Masa Corporal (IMC) de una persona. Pide al usuario su peso en kilogramos y su altura en metros. Luego, calcula el IMC usando la fórmula `IMC = peso / altura**2` y muestra el resultado con un mensaje que indique si el IMC está en el rango normal, bajo peso, sobrepeso, etc.
+
+altura=float(input("\tIngrese su altura : "))
+peso=float(input("\tIngrese su peso : "))
+
+imc = peso /(altura**2)
+
+ #Un IMC entre 18.5 y 24.9 se considera un rango de peso saludable
+ #está en el rango normal, bajo peso, sobrepeso, etc.
+#Bajo Peso Grado III (Déficit severo):      IMC inferior a 16.0.
+#Bajo Peso Grado II (Déficit moderado):     IMC entre 16.0 y 16.99. >=16 <=
+#Bajo Peso Grado I (Déficit leve):          IMC entre 17.0 y 18.49.
+#Peso normal                                IMC entre 18.5 y 24.99.  
+#Obesidad Grado I (moderada):               IMC entre 30.0 y 34.9.
+#Obesidad Grado II (severa):                IMC entre 35.0 y 39.9.
+#Obesidad Grado III (mórbida o muy severa): IMC igual o mayor a 40.0.
+
+if imc < 16:
+    print("\tSu IMC es de", imc, "y esta con bajo peso Grado III (déficit severo)")    
+elif imc >= 16 and imc <= 16.99:
+    print("\tSu IMC es de", imc, "y esta con bajo peso Grado II (déficit moderado)")    
+elif imc >= 17 and imc <= 18.49:
+    print("vSu IMC es de", imc, "y esta con bajo peso Grado I (déficit leve)")    
+elif imc >= 18.5 and imc <= 24.9:
+    print("\tSu IMC es de", imc, "y esta en el rango normal")    
+elif imc >= 30 and imc <=34.99:
+    print("\tSu IMC es de", imc, "y esta con Obesidad Grado I (moderada)")    
+elif imc >= 35 and imc <=39.99:
+    print("\tSu IMC es de", imc, "y esta con Obesidad Grado II (severa)")    
+elif imc >= 40:
+    print("\tSu IMC es de", imc, "y esta con Obesidad Grado III (mórbida o muy severa)")    
+
+# 13.Conversión de unidades
+# Escribe un programa que convierta una temperatura dada en grados Celsius a grados Fahrenheit. La fórmula de conversión es `F = C * 9/5 + 32`. Pide al usuario que ingrese una temperatura en Celsius y muestra el resultado en Fahrenheit.
+
+temperatura=float(input("\tIngresa la temperatura en Celsius: "))
+
+fahrenheit  = (temperatura * 9/5) + 32
+
+print("\tLos", temperatura, "grados Celsius son en fahrenheit: ", fahrenheit)
+
+# 14.Juego de adivinanza
+# Crea un programa que pida al usuario que adivine un número entre 1 y 10. El programa debe comparar el número ingresado con uno predefinido (por ejemplo, 7) 
+# y decir si es correcto o no. Si es incorrecto, debe dar una pista si el número es mayor o menor.
+
+numero=int(input("\tIngresa un numero del 1 al 10: "))
+
+if numero == 1:
+    print("\tEl número ingresado es menor")
+elif numero == 2:
+    print("\tEl número ingresado es menor")
+elif numero == 3:
+    print("\tEl número ingresado es menor")
+elif numero == 4:
+    print("\tEl número ingresado es menor")
+elif numero == 5:
+    print("\tEl número ingresado es menor")
+elif numero == 6:
+    print("\tEl número ingresado es menor")
+elif numero == 7:
+    print("\tCorrecto Adivinaste!")
+elif numero == 8:
+    print("\tEl número ingresado es mayor")
+elif numero == 9:
+    print("\tEl número ingresado es mayor")
+elif numero == 10:
+    print("\tEl número ingresado es mayor")
+
+# 15.Identificación del tipo de dato
+# Escribe un programa que tome una entrada del usuario y determine su tipo de dato usando la función `type()`.  El programa debe imprimir un mensaje indicando si el dato es un número entero, flotante, cadena de texto, etc.
+#en este caso no me quedo otra que ir a la IA!
+"""
+except ValueError:
+    capturar errores relacionados con valores inválidos, especialmente cuando estás 
+    convirtiendo tipos de datos (como pasar texto a número) y el valor no es compatible.
+try:
+    podés usar try para intentar ejecutar un bloque de código y, si algo falla, 
+    capturar la excepción con except.
+"""
+
+try:
+    edad = int(input("\tIngresá tu edad: "))
+    print(f"\tTenés {edad} años.")
+except ValueError:
+    print("\tError: ingresaste un valor que no es un número entero.")
+
+entrada = input("\tIngresá un valor: ")
+try:
+    valor = int(entrada)
+    tipo = "entero"
+except ValueError:
+    try:
+        valor = float(entrada)
+        tipo = "flotante"
+    except ValueError:
+        if entrada.lower() in ["true", "false"]: #convertir un texto a minúsculas
+            valor = entrada.lower() == "true"
+            tipo = "booleano"
+        else:
+            valor = entrada
+            tipo = "cadena de texto"
+print("\tValor ingresado: ",valor)
+print("\tTipo de dato detectado: ",tipo, (type(valor)))
+
+# 16.Calculador de calificaciones
+# Crea un programa que pida al usuario que ingrese sus calificaciones en tres materias. 
+# Luego, calcula el promedio de esas calificaciones e imprime un mensaje que indique si 
+# el alumno aprobó (promedio ≥ 6) o no.
+
+materia_uno=float(input("\tIngrese la calificación de la materia 1 : "))
+materia_dos=float(input("\tIngrese la calificación de la materia 2 : "))
+materia_tres=float(input("\tIngrese la calificación de la materia 3 : "))
+suma = materia_uno + materia_dos +materia_tres
+promedio = suma/3
+
+if promedio >=6:
+    print("\tUd. aprobo con un promedio de: ", promedio)
+else:
+    print("\tUd. desaprobo con un promedio de: ", promedio)
+
+
+# 17.Concatenación de strings
+# Escribe un programa que pida al usuario su nombre y su color favorito. 
+# Luego, concatena estos datos en una sola oración que diga "Hola [nombre], 
+# tu color favorito es [color]" y la imprima.
+
+nombre = input("\tIngresa tu nombre: ")
+color = input("\tIngresa tu color favorito: ")
+print ("\tHola", nombre, "tu color favorito es", color)
+
